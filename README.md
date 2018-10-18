@@ -43,6 +43,24 @@ Here is an example of a callback function that uses nativeName property instead 
   
 ```
 
+# Building
+To start local development server run
+``` node server.js ```
+It'll listen on localhost:3000 by default
+
+## webpack scripts
+```
+    npm run dev
+    npm run watch
+    npm run production
+```
+
+### P.S.
+Package is also kinda available via npm, but it's useless by now because I didn't figured out how to manage exports :C
+So you could only require source file "node_modules/react-country-suggest/src/CountrySuggest.js" directly into your app :(
+
+``` npm install react-country-suggest ```
+
 
 
 
