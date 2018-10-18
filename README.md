@@ -7,7 +7,7 @@
 By default component will use https://restcountries.eu/ API
 ## Usage 
   ```javascript   
-    <CountrySelect 
+    <CountrySuggest 
        apiURL="https://restcountries.eu/rest/v2/name/"
        nameField="name" 
        flagField="flag" 
@@ -39,7 +39,7 @@ Here is an example of a callback function that uses nativeName property instead 
   
   ...
   
-  <CountrySelect dataCallback={callback} />,
+  <CountrySuggest dataCallback={callback} />,
   
 ```
 
