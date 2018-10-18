@@ -4,8 +4,9 @@
 ![image](https://user-images.githubusercontent.com/11752471/47147073-16135480-d2d6-11e8-8854-40031d9594fb.png)
 
 
-By default component will use https://restcountries.eu/ API
-## Usage 
+По умолчанию используется API https://restcountries.eu/ 
+
+## Использование 
   ```javascript   
     <CountrySuggest 
        apiURL="https://restcountries.eu/rest/v2/name/"
@@ -15,18 +16,19 @@ By default component will use https://restcountries.eu/ API
     />,
 
   ```
-## Parameters
-| Property      | Default value                          | Description                                        | 
+  
+## Параметры
+| Свойство      | Значение по умолчанию                  | Описание                                        | 
 | ------------- |:--------------------------------------:| -------------------------------------------------- |
-| apiURL        | https://restcountries.eu/rest/v2/name/ | url for getting data, user's input will be appended to the end of a string |
-| nameField     | "name"                                 | name of field with country name in the returned json object.    |
-| flagField     | "flag"                                 | name of field with link to flag icon in the returned json object|
-| dataCallback  | "null"                                 | callback function for modification of data from response        |
+| apiURL        | https://restcountries.eu/rest/v2/name/ | Адрес, по которому будет осуществляться запрос к API, пользовательский ввод с поля будет добавлен к концу строки |
+| nameField     | "name"                                 | код поля с названием                                            |
+| flagField     | "flag"                                 | код поля со ссылкой на изображение флага                        |
+| dataCallback  | "null"                                 | коллбек для модификации данных, полученых от сервера        |
 
 ### dataCallback
-Callback function takes single object from collection of data recieved from API, and should return an object with name and flag properties.
+Функция принимает отдельный объект из коллекции, полученной в результате запроса, и должна возвращать объект со свойствами name и flag
 
-Here is an example of a callback function that uses nativeName property instead of name, and shiny flags from  https://www.countryflags.io/
+Пример Callback-функции, заменяющей название на значение из колонки nativeName, и подставляющей флаги, взятые с  https://www.countryflags.io/
 
 ```javascript   
   var callback = function dataManage(resp){
@@ -43,12 +45,12 @@ Here is an example of a callback function that uses nativeName property instead 
   
 ```
 
-# Building
-To start local development server run
+# Сборка
+Для запуска локального сервера - выполнить команду
 ``` node server.js ```
-It'll listen on localhost:3000 by default
+По умолчанию сервер будет запущен на 3000 порту
 
-## webpack scripts
+## команды для сборки с помощью webpack
 ```
     npm run dev
     npm run watch
@@ -56,8 +58,8 @@ It'll listen on localhost:3000 by default
 ```
 
 ### P.S.
-Package is also kinda available via npm, but it's useless by now because I didn't figured out how to manage exports :C
-So you could only require source file "node_modules/react-country-suggest/src/CountrySuggest.js" directly into your app :(
+Модуль как-бы доступен через npm, но в текущем виде толку от этого немного, так как у меня пока еще не вышло разобраться с экспортом так чтобы это можно было через ES6 import или require использовать,
+Поэтому будет работать только если подключить напрямую скрипт CountrySuggest.js из каталога с сырцами, а это нежизнеспособный вариант. Но я пыталсо :'D 
 
 ``` npm install react-country-suggest ```
 
