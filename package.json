@@ -22,12 +22,12 @@
   },
   "devDependencies": {
     "laravel-mix": "^2.1.14",
-    "babel-preset-react": "^6.24.1",
     "express": "^4.16.4"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "babel-preset-react": "^6.24.1"
   }
 }

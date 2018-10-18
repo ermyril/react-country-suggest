@@ -6,7 +6,7 @@ import Dropdown from './Dropdown.js';
 var CancelToken = axios.CancelToken;
 var cancel;
 
-export default class CountrySelect extends React.Component {
+export default class CountrySuggest extends React.Component {
   constructor(props) {
     super(props);
       this.state = {

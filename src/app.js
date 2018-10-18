@@ -1,7 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import CountrySelect from './CountrySelect.js';
+import CountrySuggest from './CountrySuggest.js';
+
+
+// export default CountrySuggest;
+// var CountrySuggest = require('./CountrySuggest.js');
+
+// var exports = module.exports = {};
+
+// exports.a = function() {
+//     console.log("a");
+// }
 
 var callback = function dataManage(resp){
 	let data = {
@@ -12,11 +22,11 @@ var callback = function dataManage(resp){
 }
 
 ReactDOM.render(
-  <CountrySelect 
-	  // apiURL="https://restcountries.eu/rest/v2/name/"
-	  // nameField="name" 
-	  // flagField="flag" 
-	  // dataCallback={callback}
+  <CountrySuggest 
+	  apiURL="https://restcountries.eu/rest/v2/name/"
+	  nameField="name" 
+	  flagField="flag" 
+	  dataCallback={callback}
 	/>,
   document.getElementById('root')
 );
