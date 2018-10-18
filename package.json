@@ -1,5 +1,5 @@
 {
-  "name": "country_suggest",
+  "name": "react-country-suggest",
   "version": "1.0.0",
   "description": "React component for country names completion, based on api",
   "main": "index.js",
@@ -10,8 +10,16 @@
     "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Er Myril <nm@it-buro.ru>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiasyn/react-country-suggest/issues"
+  },
+  "homepage": "https://github.com/shiasyn/react-country-suggest.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shiasyn/react-country-suggest.git"
+  },
   "devDependencies": {
     "laravel-mix": "^2.1.14",
     "babel-preset-react": "^6.24.1",
