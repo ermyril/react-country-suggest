@@ -1,6 +1,6 @@
 {
   "name": "react-country-suggest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for country names completion, based on api",
   "main": "index.js",
   "scripts": {
