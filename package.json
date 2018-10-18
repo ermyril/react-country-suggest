@@ -1,7 +1,7 @@
 {
   "name": "country_suggest",
   "version": "1.0.0",
-  "description": "",
+  "description": "React component for country names completion, based on api",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -14,11 +14,11 @@
   "license": "ISC",
   "devDependencies": {
     "laravel-mix": "^2.1.14",
+    "babel-preset-react": "^6.24.1",
     "express": "^4.16.4"
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "babel-preset-react": "^6.24.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   }
